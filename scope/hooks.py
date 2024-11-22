@@ -5,6 +5,9 @@ app_description = "Project management for ErpNext"
 app_email = "support@thecommit.company"
 app_license = "mit"
 
+
+
+
 # Apps
 # ------------------
 
@@ -242,3 +245,5 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+website_route_rules = [{'from_route': '/scope/<path:app_path>', 'to_route': 'scope'},]

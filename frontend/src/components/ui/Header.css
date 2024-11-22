@@ -1,0 +1,41 @@
+/* Üst Menü Bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .top-bar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-bar-logo {
+    height: 40px;
+  }
+  
+  .b2b-label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .top-bar-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .top-button {
+    padding: 5px 10px;
+  }
+  
+  .top-bar-contact {
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  

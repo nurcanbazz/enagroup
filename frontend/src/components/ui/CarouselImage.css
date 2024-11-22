@@ -1,0 +1,13 @@
+.carousel-item img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%; 
+    margin-top: 50px;
+    
+  }
+  
+  .carousel-images{
+    width: 100%;
+    justify-content: center;
+
+  }

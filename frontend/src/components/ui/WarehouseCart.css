@@ -1,0 +1,98 @@
+.cart-summary {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.payment-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.payment-action button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-action button:hover {
+  background-color: #45a049;
+}
+
+
+.payment-status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.payment-status.success {
+  color: #4CAF50;
+}
+
+.payment-status.error {
+  color: #FF6347;
+}
+
+
+p strong {
+  font-weight: bold;
+  color: #000;
+}
+
+
+.error-message {
+  color: #FF6347; 
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* Mobil uyumluluk */
+@media screen and (max-width: 600px) {
+  .cart-summary {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .payment-action button {
+    width: 100%;
+    font-size: 18px;
+  }
+}

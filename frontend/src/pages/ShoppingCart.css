@@ -1,0 +1,206 @@
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color:#fff;
+  
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  overflow: auto; 
+}
+
+
+.order-table th, .order-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+
+.order-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+.order-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.order-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+
+.order-table td {
+  vertical-align: middle;
+}
+
+
+.order-table td button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.order-table td button:hover {
+  background-color: #0056b3;
+}
+
+.order-table td .delete-button {
+  background-color: #dc3545;
+}
+
+.order-table td .delete-button:hover {
+  background-color: #c82333;
+}
+
+.order-table td .edit-button {
+  background-color: #28a745;
+}
+
+.order-table td .edit-button:hover {
+  background-color: #218838;
+}
+
+
+.order-table .quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-table .quantity-controls button {
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.order-table .quantity-controls span {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+
+.order-table .status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-table .status .check {
+  color: green;
+}
+
+.order-table .status .times {
+  color: red;
+}
+
+.order-table .status span {
+  color: #333;
+}
+
+
+.order-table td .net-price {
+  font-weight: bold;
+  color: #333;
+}
+
+.order-table td .net-price-vat {
+  font-weight: bold;
+  color: #e63946;
+}
+
+.order-table td .date {
+  font-size: 12px;
+  color: #777;
+}
+
+
+.depot-cards {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  justify-content: space-between; 
+  max-height: 50px;
+}
+
+
+.depot-card {
+  flex: 1 1 calc(33.33% - 20px); 
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: 100px; 
+  height: 300px;
+}
+
+
+.depot-card h3 {
+  margin-bottom: 10px;
+}
+
+.depot-card p {
+  margin: 5px 0;
+}
+
+.depot-card button {
+  width: 30%;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.order-table .empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  padding: 20px;
+}
+
+
+
+.order-table-wrapper {
+  overflow-x:auto; 
+  max-height: 600px; 
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .depot-card {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+}
